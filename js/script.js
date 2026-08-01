@@ -37,8 +37,9 @@ if (burger) {
     navLinksList.style.position = "fixed";
     navLinksList.style.top = "64px";
     navLinksList.style.right = "24px";
-    navLinksList.style.background = "#12151c";
-    navLinksList.style.border = "1px solid #232833";
+    navLinksList.style.background = "#ffffff";
+    navLinksList.style.border = "1px solid #e2e6ec";
+    navLinksList.style.boxShadow = "0 20px 40px -24px rgba(10,37,64,0.25)";
     navLinksList.style.borderRadius = "14px";
     navLinksList.style.padding = "18px 24px";
     navLinksList.style.gap = "16px";

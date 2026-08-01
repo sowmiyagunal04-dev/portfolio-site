@@ -1,25 +1,25 @@
 /* ============================================================
    Sowmiya Jayaseelan — Portfolio
-   Palette: near-black ink + warm gold accent (premium/editorial)
+   Palette: navy blue & white (professional/corporate)
    ============================================================ */
 
 :root {
-  --bg: #0b0d12;
-  --bg-alt: #0e1016;
-  --surface: #12151c;
-  --surface-hover: #171b24;
-  --border: #232833;
-  --text: #f2f3f5;
-  --text-muted: #9aa3af;
-  --text-faint: #6b7280;
-  --gold: #c9a464;
-  --gold-bright: #e2c07f;
-  --gold-dim: rgba(201, 164, 100, 0.14);
-  --success: #7fb88f;
+  --bg: #ffffff;
+  --bg-alt: #f5f7fa;
+  --surface: #ffffff;
+  --surface-hover: #f5f7fa;
+  --border: #e2e6ec;
+  --text: #0a2540;
+  --text-muted: #6b7280;
+  --text-faint: #8a93a3;
+  --gold: #3b82f6;
+  --gold-bright: #60a5fa;
+  --gold-dim: rgba(59, 130, 246, 0.1);
+  --success: #16a34a;
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 22px;
-  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 20px 40px -20px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 1px 2px rgba(10, 37, 64, 0.04), 0 20px 40px -24px rgba(10, 37, 64, 0.18);
   --maxw: 1120px;
   --font-sans: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
@@ -36,16 +36,6 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background:
-    radial-gradient(1200px 600px at 15% -10%, rgba(201, 164, 100, 0.08), transparent 60%),
-    radial-gradient(900px 500px at 100% 10%, rgba(201, 164, 100, 0.05), transparent 55%);
 }
 
 img { max-width: 100%; display: block; }
@@ -105,7 +95,7 @@ section:last-of-type { border-bottom: none; }
   height: 7px;
   border-radius: 50%;
   background: var(--success);
-  box-shadow: 0 0 0 3px rgba(127, 184, 143, 0.18);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.16);
 }
 
 /* ---------------- Nav ---------------- */
@@ -116,7 +106,7 @@ section:last-of-type { border-bottom: none; }
   right: 0;
   z-index: 100;
   backdrop-filter: blur(14px);
-  background: rgba(11, 13, 18, 0.72);
+  background: rgba(255, 255, 255, 0.82);
   border-bottom: 1px solid var(--border);
 }
 .nav-inner {
@@ -158,7 +148,7 @@ section:last-of-type { border-bottom: none; }
   color: var(--gold);
   transition: all 0.2s ease;
 }
-.nav-cta:hover { background: var(--gold); color: #0b0d12; }
+.nav-cta:hover { background: var(--gold); color: #ffffff; }
 .nav-burger { display: none; background: none; border: none; color: var(--text); font-size: 22px; cursor: pointer; }
 
 /* ---------------- Hero ---------------- */
@@ -237,8 +227,8 @@ section:last-of-type { border-bottom: none; }
   border: 1px solid transparent;
   transition: all 0.2s ease;
 }
-.btn-primary { background: var(--gold); color: #0b0d12; }
-.btn-primary:hover { background: var(--gold-bright); transform: translateY(-1px); }
+.btn-primary { background: var(--text); color: #ffffff; }
+.btn-primary:hover { background: var(--gold); color: #ffffff; transform: translateY(-1px); }
 .btn-outline { border-color: var(--border); color: var(--text); }
 .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
 
@@ -325,6 +315,7 @@ section:last-of-type { border-bottom: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 26px;
+  box-shadow: var(--shadow-card);
 }
 .skill-card h3 {
   font-size: 13px;
@@ -394,6 +385,7 @@ section:last-of-type { border-bottom: none; }
   transition: border-color 0.2s ease, transform 0.2s ease;
   display: flex;
   flex-direction: column;
+  box-shadow: var(--shadow-card);
 }
 .project-card:hover { border-color: var(--gold); transform: translateY(-3px); }
 .project-thumb {
@@ -474,6 +466,8 @@ section:last-of-type { border-bottom: none; }
   padding: 18px 24px;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
   transition: border-color 0.2s ease;
 }
 .case-row:hover { border-color: var(--gold); }
@@ -507,6 +501,7 @@ section:last-of-type { border-bottom: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   align-items: flex-start;
+  box-shadow: var(--shadow-card);
 }
 .cred-icon {
   width: 34px; height: 34px;
